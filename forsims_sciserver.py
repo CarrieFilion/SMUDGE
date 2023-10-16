@@ -90,7 +90,7 @@ class SimHandler(object):
         self.verbose = 0 #default verbosity is zero but can go up to like 4 or 5
 
         #path info defaults
-        self.path = '/home/idies/workspace/jhunt2021/'
+        self.path = '/home/idies/workspace/SMUDGE/'
         self.db = 'data*'
         self.sim = str(sim)
         
@@ -98,7 +98,7 @@ class SimHandler(object):
         self.recenter = False
         
         if self.sim == 'M1':
-            self.pointfpath = '/home/idies/workspace/jhunt2021/data11_03/M1pointers/' #path for pointer .npy files
+            self.pointfpath = '/home/idies/workspace/SMUDGE/data11_03/M1pointers/' #path for pointer .npy files
         
             #initial values as determined by BN-2 simulation
             # there are 219,607,640 star particles in the disk, 21,960,680 in the bulge, 
@@ -110,14 +110,14 @@ class SimHandler(object):
             self.masscutoff = 400 #mass flag boundary between bulge and disk 
             
         if self.sim == 'M2':
-            self.pointfpath = '/home/idies/workspace/jhunt2021/data11_03/M2pointers/' #path for pointer .npy files - none yet
+            self.pointfpath = '/home/idies/workspace/SMUDGE/data11_03/M2pointers/' #path for pointer .npy files - none yet
             self.ntot = 1283033643
             self.ndark=1006801964
             self.nstar= 276231679
             self.masscutoff = 400 #mass flag boundary between bulge and disk 
         
         if self.sim == 'D2':
-            self.pointfpath = '/home/idies/workspace/jhunt2021/data11_03/D2pointers/' #path for pointer .npy files
+            self.pointfpath = '/home/idies/workspace/SMUDGE/data11_03/D2pointers/' #path for pointer .npy files
 
             self.ntot = 1279999360
             self.ndark=1003921280
