@@ -11,5 +11,7 @@ The SMUDGE simulations are hosted on [SciServer](https://sciserver.org/datasets/
 # Getting Started
 If you don't already have one, make an account on [SciServer](https://sciserver.org/). From the Dashboard, click the Science Domains icon and then join the Cosmological Simulations Science Domain. To access the simulation snapshots, go to the Dashboard again and click the Compute icon and click 'Create a Container'. Select the SciServer 2.0 compute image, and then select the SMUDGE data volume. From there, you can clone this package in the terminal.
 
+- note: you may have issues with importing coords from galpy.util - if this happens to you, run 'pip install galpy==1.7 --force-reinstall' at the top of your notebook or job, restart the kernel, and try again
+  
 ## References
 We ask that publications and presentations that use these simulations cite [Hunt et al 2021](https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.1459H/abstract).
